@@ -41,7 +41,7 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}-amd64
 
   image-arm64:
-    runs-on: linux-arm64
+    runs-on: self-hosted
     # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
     permissions:
       contents: read
